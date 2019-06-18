@@ -96,25 +96,90 @@
 
 4.  打开`http://localhost:4000/`你的第一篇博客就已经生成好了；
 
-   ![013](/images/014.png)
+   ![014](/images/014.png)
 
 #### 第五步  将博客部署到github上公开使用
 
 1. 打开个人的[github网站](https://github.com/),具体如何申请账号，百度下，网上一大堆；
-2.  
-3.  
-4.  
-5.  
 
-#### 第六步
+2.  点击右上角+符号，点击`New repository`新建一个存储库，用户部署个人博客的github仓库命名必须符合特定的规范才行，为`你的用户名.github.io`,像博主的就`wangtengyz.github.io`,后续在浏览器输入这个地址就可以访问了；
 
-#### 第七步
+   ![015](/images/015.png)
 
-#### 第八步
+   ​
 
-#### 第九步
+   ![016](/images/016.png)
 
+3.  点击下面的创建按钮或者回车就创建好了；
 
+   ![017](/images/017.png)
 
+4. 接下里，我们需要在blog文件夹下面装一个git部署的插件，终端输入`yarn add hexo-deployer-git` 安装;
 
+   ![018](/images/018.png)
 
+5.  将blog文件夹里`_config.yml`文件用编辑器（vscode或者Notepad++等）打开，需要在打开改文档的最下方Deployment进行下配置；
+
+   ![019](/images/019.png)
+
+   ![020](/images/020.png)
+
+   + type:git
+
+   + repo:https://github.com/wangtengyz/wangtengyz.github.io.git(整个网站是你前面在github设置存储库的地址)
+
+     ![022](/images/022.png)
+
+   + branch: master
+
+     ![021](/images/021.png)
+
+6. 保存文件，退出编辑器，截下来就简单了，在终端输入`hexo d`部署到git远程站点上，记得你的github账号密码，在部署过程中他会要求你数入账号密码，输入成功后就部署上去了；
+
+   ![023](/images/023.png)
+
+7.  最后输入`wangtengyz.github.io`（github用户名.github.io）,博客就成功的部署到gitub上了；
+
+   ![024](/images/024.png)
+
+#### 第六步    如何更换博客主题
+
+1. 一般都可以在网上找到很多各种各样的主题，博主在这里推荐一个github上用的很多的一个[主题](github.com/litten/hexo-theme-yilia)，地址`github.com/litten/hexo-theme-yilia`
+
+2. 记住我们的所有的终端操作基本上都是在blog文件夹下面，在终端输入`git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia`,将主题克隆岛blog文件下的theme文件的yilia文件里
+
+3. 等主题下载后，打开blog文件夹里`_config.yml`文件，进行配置theme参数，将主题改成yilia；
+
+   ![025](/images/025.png)
+
+4. 终端输入 `hexo clean`  `hexo g` `hexo s`三个命令，主题已经变成yilia；然后点击所有文章会出现一些问题，很简单，在终端输`npm i hexo-generator-json-content --save`,再打开blog文件夹里`_config.yml`文件添加配置就可以了；
+
+   ![026](/images/026.png)
+
+   ![027](/images/027.png)
+
+   ![028](/images/028.png)
+
+5.  在终端重新输入 `hexo clean`  `hexo g` `hexo s`，打开本地`localhost:4000`查看网址就发现问题解决了；
+
+6. 最后输入`hexo d` 推送到github上，打开`wangtengyz.github.io`(你就输入你的用户名)网址，看到最后效果了，大功告成；
+
+   ![029](/images/029.png)
+
+7. 附上[源码地址](https://github.com/wangtengyz/wangtengyz.github.io)
+
+   ​
+
+   ​
+
+   ​
+
+   ​
+
+   ​
+
+   ​
+
+   ​
+
+#### 
