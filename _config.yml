@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 小小前端汪的个人博客
-subtitle: 小小前端汪的个人博客
-description: 小小前端汪的个人博客,是记录博主学习和成长的一个自媒体博客，发展方向：web前端开发、移动端开发、javascript、vue.js、webpack、Node.js、微信小程序、H5、TypeScript。
+title: 爱烨子的前端汪的个人博客
+subtitle: 爱烨子的前端汪的个人博客
+description: 爱烨子的前端汪的个人博客,是记录博主学习和成长的一个自媒体博客，发展方向：web前端开发、移动端开发、javascript、vue.js、webpack、Node.js、微信小程序、H5、TypeScript。
 keywords: web前端开发、移动端开发、javascript、vue.js、webpack、Node.js、微信小程序、H5
-author:  小小前端汪
+author:  爱烨子的前端汪
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+# url: http://yoursite.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
